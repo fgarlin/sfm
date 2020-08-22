@@ -9,9 +9,9 @@ class Shader {
 public:
     GLuint _program;
 
-	Shader(const GLchar *compute_path);
-	Shader(const GLchar *vertex_path, const GLchar *fragment_path);
-	void use();
+    Shader(const GLchar *compute_path);
+    Shader(const GLchar *vertex_path, const GLchar *fragment_path);
+    void use();
     void setBool(const std::string &name, bool value) const {
         glUniform1i(glGetUniformLocation(_program, name.c_str()), (int)value);
     }
@@ -52,6 +52,6 @@ public:
             glGetUniformLocation(_program, name.c_str()), 1, GL_FALSE, &mat[0][0]);
     }
 private:
-	void checkShaderErrors(GLuint shader);
-	void checkProgramErrors(GLuint program);
+    void checkShaderErrors(GLuint shader);
+    void checkProgramErrors(GLuint program);
 };
