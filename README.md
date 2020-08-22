@@ -19,3 +19,7 @@ to the surface inside the volume. The color of the voxel is also stored. The
 algorithm gives less importance to newer frames by using a weight function, so
 the point cloud data stabilizes as more frames are integrated into the volume.
 The point cloud is then raycasted so it can be displayed to the user.
+
+![True Colors](https://github.com/fgarlin/sfm/blob/master/gallery/office_color.png?raw=true)
+![Normals](https://github.com/fgarlin/sfm/blob/master/gallery/office_normals.png?raw=true)
+![Phong Shading](https://github.com/fgarlin/sfm/blob/master/gallery/office_phong.png?raw=true)
